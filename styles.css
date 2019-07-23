@@ -5,6 +5,8 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background: url("https://cdn.pixabay.com/photo/2016/01/27/15/25/space-1164579_960_720.png");
+  background-position: center;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -27,7 +29,15 @@ body, a:link, a:visited, a:active{
 }
 
 .pikachu{
-  border: 50px solid green;
+  border: 1px dotted green;
   position: absolute;
-  background-image: url("./pikachuSurprise.png");
+  content: url('pikachuSurprise.png');
+  content-size:
+
+}
+
+.bobble{
+  border: 80px solid pink;
+  position: absolute;
+  border-radius: 60px;
 }
