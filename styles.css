@@ -27,7 +27,7 @@ body, a:link, a:visited, a:active{
 }
 
 .pikachu{
-  /* border-radius:50px; */
+  border: 50px solid green;
   position: absolute;
   background-image: url("./pikachuSurprise.png");
 }
