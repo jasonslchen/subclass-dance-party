@@ -23,6 +23,11 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   // debugger;
 
+  this.makeLeft = function() {
+    // let left = "20px";
+    this.$node.css("left", "200px");
+  }
+
 
 };
 

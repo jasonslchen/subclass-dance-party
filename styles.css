@@ -32,12 +32,13 @@ body, a:link, a:visited, a:active{
   border: 1px dotted green;
   position: absolute;
   content: url('pikachuSurprise.png');
-  content-size:
+
 
 }
 
 .bobble{
-  border: 20px solid pink;
+  border: 1px solid pink;
   position: absolute;
   border-radius: 60px;
+  content: url('jurassickParkNewman.gif');
 }

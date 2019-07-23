@@ -33,7 +33,9 @@ $(document).ready(function() {
   });
 
   $('.lineUp').on('click', function() {
-    console.log(window.dancers);
+    for(let i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].makeLeft();
+    }
     //run for loop through window.dancers
     //in each makeLeft set position aboslute to window?/ and bring left
   })
