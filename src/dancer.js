@@ -32,21 +32,29 @@
 // };
 
 var makeDancer = function(top, left, timeBetweenSteps) {
+
   this.$node = $('<span class="dancer"></span>');
-  //if this.step is at the end of the function, it dont work.
+
+
   this.step();
   this.timeBetweenSteps = timeBetweenSteps;
-  // this.step = function() {
-    //   // the basic dancer doesn't do anything interesting at all on each step,
-    //   // it just schedules the next step
-    //   setTimeout(this.step.bind(this), timeBetweenSteps);
-    // };
   this.setPosition(top, left);
 }
 
+// var makeDancer = function(top, left, timeBetweenSteps) {
+//   this.$node = $('<span class="dancer"></span>');
+//   //if this.step is at the end of the function, it dont work.
+//   this.step();
+//   this.timeBetweenSteps = timeBetweenSteps;
+//   // this.step = function() {
+//     //   // the basic dancer doesn't do anything interesting at all on each step,
+//     //   // it just schedules the next step
+//     //   setTimeout(this.step.bind(this), timeBetweenSteps);
+//     // };
+//   this.setPosition(top, left);
+// }
+
 makeDancer.prototype.step = function() {
-  // the basic dancer doesn't do anything interesting at all on each step,
-  // it just schedules the next step
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
