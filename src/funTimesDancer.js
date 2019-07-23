@@ -1,5 +1,10 @@
 var funTimesDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
+
+  this.makeLeft = function() {
+    this.$node.animate({left: "5px"});
+  }
+
   this.$node.addClass("bobble");
   this.$node.removeClass("dancer");
   this.id = Date.now();
@@ -25,4 +30,9 @@ funTimesDancer.prototype.step = function() {
     this.hasMoved = true;
   }
 }
+
+// funTimesDancer.prototype.makeLeft = function() {
+//   let left = "20px";
+//   $this.node.css(left);
+// }
 

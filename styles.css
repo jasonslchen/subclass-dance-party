@@ -37,7 +37,7 @@ body, a:link, a:visited, a:active{
 }
 
 .bobble{
-  border: 80px solid pink;
+  border: 20px solid pink;
   position: absolute;
   border-radius: 60px;
 }

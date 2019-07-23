@@ -1,5 +1,10 @@
 var leftRightDancer = function(top, left, timebetweenSteps) {
   makeDancer.call(this, top, left, timebetweenSteps);
+
+  this.makeLeft = function() {
+    this.$node.animate({left: "5px"});
+  }
+
   this.$node.addClass("pikachu");
   this.$node.removeClass("dancer");
   this.id = Date.now();

@@ -28,6 +28,16 @@ $(document).ready(function() {
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+
+    window.dancers.push(dancer);
   });
+
+  $('.lineUp').on('click', function() {
+    console.log(window.dancers);
+    //run for loop through window.dancers
+    //in each makeLeft set position aboslute to window?/ and bring left
+  })
+
+
 });
 
