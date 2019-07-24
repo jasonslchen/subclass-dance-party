@@ -1,6 +1,11 @@
 $(document).ready(function() {
   window.dancers = [];
 
+  $("span").mouseover(function() {
+    console.log(this);
+    // $(this).append( "<div>Handler for .mouseover() called.</div>" );
+  });
+
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.

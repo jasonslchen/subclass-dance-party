@@ -34,11 +34,12 @@ body, a:link, a:visited, a:active{
   content: url('pikachuSurprise.png');
 
 
+
 }
 
 .bobble{
   border: 1px solid pink;
   position: absolute;
   border-radius: 60px;
-  content: url('jurassickParkNewman.gif');
+  content: url('jurassicNewmanGif.gif');
 }

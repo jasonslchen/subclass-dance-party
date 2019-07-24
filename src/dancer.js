@@ -39,6 +39,16 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   //   this.$node.animate({left: "5px"});
   // }
 
+  this.$node.mouseenter(function() {
+    $('#' + this.id).fadeOut( "fast" );
+  });
+
+  this.$node.mouseleave(function() {
+    $('#' + this.id).fadeIn();
+  });
+  this.id = Date.now();
+  this.$node.attr('id', this.id);
+
   this.step();
   this.timeBetweenSteps = timeBetweenSteps;
   this.setPosition(top, left);

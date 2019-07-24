@@ -8,9 +8,9 @@ var funTimesDancer = function(top, left, timeBetweenSteps) {
 
   this.$node.addClass("bobble");
   // this.$node.removeClass("dancer");
-  this.id = Date.now();
+  // this.id = Date.now();
   // this.$node.css("position", "relative");
-  this.$node.attr('id', this.id);
+  // this.$node.attr('id', this.id);
   this.hasMoved = false;
 }
 funTimesDancer.prototype = Object.create(makeDancer.prototype);
