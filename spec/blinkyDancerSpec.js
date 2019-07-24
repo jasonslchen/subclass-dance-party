@@ -39,3 +39,12 @@ describe('blinkyDancer', function() {
     });
   });
 });
+
+
+describe('leftRightDancer', function() {
+  let leftRightDancer, clock;
+  let timeBetweenSteps = 200;
+
+
+
+})
